@@ -274,12 +274,12 @@ body {
     color: var(--color-darkgrey);
     font-family: var(--gh-font-body, var(--font-sans));
     font-size: 1.6rem;
-    line-height: 1.6em;
+    line-height: 1.65em;
     font-weight: 400;
     font-style: normal;
-    letter-spacing: 0;
+    letter-spacing: 0.01em;
     text-rendering: optimizeLegibility;
-    background: #fff;
+    background: var(--color-background);
 
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
@@ -288,7 +288,8 @@ body {
 
 ::selection {
     text-shadow: none;
-    background: #daf2fd;
+    background: var(--color-secondary);
+    color: #fff;
 }
 
 hr {
@@ -399,8 +400,13 @@ blockquote cite a {
 }
 
 a {
-    color: #15171A;
+    color: var(--color-darkgrey);
     text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+a:hover {
+    color: var(--ghost-accent-color, var(--color-primary));
 }
 
 h1,

@@ -1,10 +1,6 @@
-# Casper
+# Malatelier
 
-The default theme for [Ghost](http://github.com/tryghost/ghost/). This is the latest development version of Casper! If you're just looking to download the latest release, head over to the [releases](https://github.com/TryGhost/Casper/releases) page.
-
-&nbsp;
-
-![screenshot-desktop](https://user-images.githubusercontent.com/1418797/183329195-8e8f2ee5-a473-4694-a813-a2575491209e.png)
+A cosy, Material Design inspired Ghost theme with warm colors and modern UI/UX principles. Built with Google Material Design guidelines for a comfortable reading and browsing experience.
 
 &nbsp;
 
@@ -32,7 +28,7 @@ One neat trick is that you can also create custom one-off templates by adding th
 
 # Development
 
-Casper styles are compiled using Gulp/PostCSS to polyfill future CSS spec. You'll need [Node](https://nodejs.org/), [Yarn](https://yarnpkg.com/) and [Gulp](https://gulpjs.com) installed globally. After that, from the theme's root directory:
+Malatelier styles are compiled using Gulp/PostCSS to polyfill future CSS spec. You'll need [Node](https://nodejs.org/), [Yarn](https://yarnpkg.com/) and [Gulp](https://gulpjs.com) installed globally. After that, from the theme's root directory:
 
 ```bash
 # install dependencies
@@ -57,9 +53,18 @@ yarn zip
 - [Color Mod](https://github.com/jonathantneal/postcss-color-mod-function)
 
 
+# Design Principles
+
+Malatelier follows Google Material Design guidelines:
+- **Elevation & Shadows**: Proper depth and hierarchy through layered shadows
+- **Cosy Colors**: Warm, inviting color palette for comfortable reading
+- **Typography**: Clear hierarchy with Roboto-inspired font stack
+- **Rounded Corners**: Softer UI elements with consistent border radius
+- **Responsive**: Mobile-first approach with thoughtful breakpoints
+
 # SVG Icons
 
-Casper uses inline SVG icons, included via Handlebars partials. You can find all icons inside `/partials/icons`. To use an icon just include the name of the relevant file, eg. To include the SVG icon in `/partials/icons/rss.hbs` - use `{{> "icons/rss"}}`.
+Malatelier uses inline SVG icons, included via Handlebars partials. You can find all icons inside `/partials/icons`. To use an icon just include the name of the relevant file, eg. To include the SVG icon in `/partials/icons/rss.hbs` - use `{{> "icons/rss"}}`.
 
 You can add your own SVG icons in the same manner.
 

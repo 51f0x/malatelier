@@ -2183,6 +2183,16 @@ iframe.instagram-media + script + :not([id]) {
     opacity: 1;
 }
 
+.site-footer-logo-svg {
+    display: inline-block;
+}
+
+.site-footer-logo-svg svg {
+    height: 80px;
+    width: auto;
+    fill: currentColor;
+}
+
 .site-footer .copyright a {
     color: #fff;
     letter-spacing: -0.015em;

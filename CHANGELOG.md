@@ -10,9 +10,11 @@
 - Created new Material Design-inspired identity
 - Integrated official Malatelier Brig logo and favicon
 - Applied brand colors from Malatelier Brig (#e84747 primary red)
-- **Logo automatically displays in footer** (white version on gradient)
+- **Logo automatically displays in footer** (SVG format, white on gradient)
+- **Created 4 brand SVG icons** for flexible usage throughout theme
 - Logo assets ready for Ghost admin upload
 - Created LOGO-SETUP.md with complete setup instructions
+- Created ICONS-GUIDE.md for icon usage documentation
 
 #### Material Design Implementation
 - **Color Palette**: Vibrant, artistic colors inspired by Malatelier Brig
@@ -79,12 +81,23 @@
 
 ### Files Modified
 - `package.json` - Updated metadata and dependencies
-- `README.md` - Added design principles documentation
+- `README.md` - Added design principles and icon documentation
 - `gulpfile.js` - Updated build references
-- `default.hbs` - Added Google Fonts, updated asset references
+- `default.hbs` - Added Google Fonts, favicon, SVG logo in footer
 - `assets/css/screen.css` - Complete Material Design rework
 - `assets/css/global.css` - Enhanced base styles
 - All built assets regenerated
+
+### New Files Created
+- `partials/icons/malatelier-logo.hbs` - Full logo as SVG
+- `partials/icons/malatelier.hbs` - Simplified brand icon
+- `partials/icons/art.hbs` - Artist palette icon
+- `partials/icons/paintbrush.hbs` - Paintbrush icon
+- `LOGO-SETUP.md` - Logo setup guide
+- `ICONS-GUIDE.md` - Complete icon usage guide
+- `BRANDING.md` - Branding asset documentation
+- `INTEGRATION.md` - Technical integration guide
+- `BRANDING-CHECKLIST.md` - Integration verification
 
 ### Compatibility
 - ✅ Compatible with Ghost ≥ 5.0.0

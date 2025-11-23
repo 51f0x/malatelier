@@ -94,7 +94,9 @@
                 {{#if @site.logo}}
                     <img class="site-footer-logo" src="{{@site.logo}}" alt="{{@site.title}}">
                 {{else}}
-                    <img class="site-footer-logo" src="{{asset "images/branding/malatelier-logo.jpg"}}" alt="Malatelier Brig">
+                    <div class="site-footer-logo site-footer-logo-svg">
+                        {{> "icons/malatelier-logo"}}
+                    </div>
                 {{/if}}
                 <section class="copyright"><a href="{{@site.url}}">{{@site.title}}</a> &copy; {{date format="YYYY"}}</section>
             </div>

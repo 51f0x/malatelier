@@ -84,7 +84,26 @@ All branding assets are sourced from [www.malatelier-brig.ch](https://www.malate
 
 # SVG Icons
 
-Malatelier uses inline SVG icons, included via Handlebars partials. You can find all icons inside `/partials/icons`. To use an icon just include the name of the relevant file, eg. To include the SVG icon in `/partials/icons/rss.hbs` - use `{{> "icons/rss"}}`.
+Malatelier uses inline SVG icons, included via Handlebars partials. You can find all icons inside `/partials/icons`. 
+
+### Using Icons
+
+To include an icon, use the Handlebars partial syntax:
+
+```handlebars
+{{> "icons/rss"}}           {{!-- RSS feed icon --}}
+{{> "icons/malatelier"}}    {{!-- Malatelier brand icon --}}
+{{> "icons/art"}}           {{!-- Art palette icon --}}
+{{> "icons/paintbrush"}}    {{!-- Paintbrush icon --}}
+```
+
+### Malatelier Brand Icons
+
+The theme includes special brand-themed icons:
+- **`malatelier-logo.hbs`** - Full logo as SVG (embeds JPG)
+- **`malatelier.hbs`** - Simplified palette icon
+- **`art.hbs`** - Artist palette icon
+- **`paintbrush.hbs`** - Brush icon for creative themes
 
 You can add your own SVG icons in the same manner.
 

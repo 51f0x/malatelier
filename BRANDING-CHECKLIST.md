@@ -5,7 +5,11 @@ Complete verification that all branding is properly integrated into the theme.
 ## ✅ Logo Integration Status
 
 ### 1. Logo Files Present
-- ✅ Main logo: `assets/images/branding/malatelier-logo.jpg` (140x158px)
+- ✅ Main logo JPG: `assets/images/branding/malatelier-logo.jpg` (140x158px)
+- ✅ Logo SVG icon: `partials/icons/malatelier-logo.hbs` (embeds JPG)
+- ✅ Brand icon SVG: `partials/icons/malatelier.hbs` (simplified)
+- ✅ Art icon SVG: `partials/icons/art.hbs` (palette)
+- ✅ Paintbrush icon SVG: `partials/icons/paintbrush.hbs`
 - ✅ Favicon 32px: `assets/images/favicon.ico`
 - ✅ Favicon 192px: `assets/images/apple-touch-icon.png`
 - ✅ All files downloaded from official website
@@ -16,12 +20,14 @@ Complete verification that all branding is properly integrated into the theme.
 #### Footer Logo (default.hbs)
 - ✅ Logo automatically displays in footer
 - ✅ Fallback to Ghost admin logo if set
-- ✅ Default shows Malatelier Brig logo
-- ✅ White filter applied for visibility
+- ✅ Default shows Malatelier Brig logo as SVG
+- ✅ White color applied for visibility on red gradient
 - ✅ Hover effect implemented
 - ✅ Responsive sizing
+- ✅ SVG format for perfect scaling
 
-**Code Location**: `default.hbs` lines 93-99
+**Code Location**: `default.hbs` lines 93-101
+**Icon Partial**: `partials/icons/malatelier-logo.hbs`
 
 ```handlebars
 {{#if @site.logo}}

@@ -22,9 +22,9 @@
         "postship": "git fetch && gulp release"
     },
     "author": {
-        "name": "Malatelier",
-        "email": "hello@malatelier.com",
-        "url": "https://malatelier.com/"
+        "name": "Malatelier Brig",
+        "email": "info@malatelier-brig.ch",
+        "url": "https://www.malatelier-brig.ch/"
     },
     "gpm": {
         "type": "theme",

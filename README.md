@@ -2,6 +2,8 @@
 
 A cosy, Material Design inspired Ghost theme with warm colors and modern UI/UX principles. Built with Google Material Design guidelines for a comfortable reading and browsing experience.
 
+This theme is inspired by [Malatelier Brig](https://www.malatelier-brig.ch/), an art studio in Brig, Switzerland specializing in painting, modeling, pottery, and creative workshops for children and adults.
+
 &nbsp;
 
 # First time using a Ghost theme?
@@ -57,10 +59,19 @@ yarn zip
 
 Malatelier follows Google Material Design guidelines:
 - **Elevation & Shadows**: Proper depth and hierarchy through layered shadows
-- **Cosy Colors**: Warm, inviting color palette for comfortable reading
+- **Cosy Colors**: Warm, inviting color palette inspired by art studio aesthetics
 - **Typography**: Clear hierarchy with Roboto-inspired font stack
 - **Rounded Corners**: Softer UI elements with consistent border radius
 - **Responsive**: Mobile-first approach with thoughtful breakpoints
+
+# Branding
+
+The theme includes the official Malatelier Brig logo and branding assets:
+- Logo: `assets/images/branding/malatelier-logo.jpg`
+- Favicon: `assets/images/favicon.ico`
+- Apple Touch Icon: `assets/images/apple-touch-icon.png`
+
+All branding assets are sourced from [www.malatelier-brig.ch](https://www.malatelier-brig.ch/) and remain property of Malatelier Brig.
 
 # SVG Icons
 

@@ -8,12 +8,16 @@
 - Renamed theme from "Casper" to "Malatelier"
 - Updated all references, repository URLs, and metadata
 - Created new Material Design-inspired identity
+- Integrated official Malatelier Brig logo and favicon
+- Applied brand colors from Malatelier Brig (#e84747 primary red)
 
 #### Material Design Implementation
-- **Color Palette**: Warm, cosy colors with Material Design principles
-  - Primary: Deep Purple (#6B4E71)
-  - Secondary: Warm Beige/Gold (#D4A574)
-  - Accent: Soft Coral (#E8927C)
+- **Color Palette**: Vibrant, artistic colors inspired by Malatelier Brig
+  - Primary: Malatelier Red (#e84747) - signature brand color
+  - Primary Light: Light Red (#FF6B6B)
+  - Primary Dark: Dark Red (#D63031)
+  - Secondary: Warm Golden Orange (#F39C12)
+  - Accent: Bright Coral Red (#E74C3C)
   - Neutral colors with warm tones
 
 - **Elevation System**: Implemented 5-level shadow system

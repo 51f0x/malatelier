@@ -46,12 +46,12 @@ button:focus-visible {
 
 :root {
 
-    /* Material Design Cosy Color Palette */
-    --color-primary: #6B4E71;        /* Deep Purple - warm and cosy */
-    --color-primary-light: #9B7FA3;  /* Light Purple */
-    --color-primary-dark: #4A3350;   /* Dark Purple */
-    --color-secondary: #D4A574;      /* Warm Beige/Gold */
-    --color-accent: #E8927C;         /* Soft Coral */
+    /* Malatelier Brig Brand Colors */
+    --color-primary: #e84747;        /* Malatelier Red - vibrant and artistic */
+    --color-primary-light: #FF6B6B;  /* Light Red */
+    --color-primary-dark: #D63031;   /* Dark Red */
+    --color-secondary: #F39C12;      /* Warm Golden Orange */
+    --color-accent: #E74C3C;         /* Bright Coral Red */
     
     /* Neutrals with warmth */
     --color-darkgrey: #2C2C2C;

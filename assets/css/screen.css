@@ -31,17 +31,52 @@ production stylesheet in assets/built/screen.css
 
 :root {
 
-    /* Colours */
-    --color-green: #a4d037;
-    --color-yellow: #fecd35;
-    --color-red: #f05230;
-    --color-darkgrey: #15171A;
-    --color-midgrey: #738a94;
-    --color-lightgrey: #f1f1f1;
-    --color-secondary-text: #979797;
-    --color-border: #e1e1e1;
-    --color-wash: #e5eff5;
-    --color-darkmode: #151719;
+    /* Material Design Color Palette - Cosy & Warm */
+    /* Primary Colors - Warm Terracotta/Amber tones */
+    --md-primary: #8B4513;
+    --md-primary-light: #CD853F;
+    --md-primary-dark: #654321;
+    
+    /* Secondary Colors - Warm Earth tones */
+    --md-secondary: #D2691E;
+    --md-secondary-light: #FF8C42;
+    --md-secondary-dark: #A0522D;
+    
+    /* Accent Colors */
+    --color-green: #6B8E23;
+    --color-yellow: #FFB347;
+    --color-red: #CD5C5C;
+    
+    /* Surface Colors - Warm neutrals */
+    --color-darkgrey: #2C2416;
+    --color-midgrey: #8B7355;
+    --color-lightgrey: #F5F1EB;
+    --color-secondary-text: #8B7355;
+    --color-border: #E8DDD4;
+    --color-wash: #F9F6F2;
+    --color-darkmode: #1A1611;
+    
+    /* Material Design Elevation Shadows */
+    --md-elevation-1: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    --md-elevation-2: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+    --md-elevation-3: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+    --md-elevation-4: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+    --md-elevation-5: 0 19px 38px rgba(0, 0, 0, 0.30), 0 15px 12px rgba(0, 0, 0, 0.22);
+    
+    /* Material Design Spacing */
+    --md-spacing-xs: 4px;
+    --md-spacing-sm: 8px;
+    --md-spacing-md: 16px;
+    --md-spacing-lg: 24px;
+    --md-spacing-xl: 32px;
+    --md-spacing-xxl: 48px;
+    
+    /* Material Design Border Radius */
+    --md-radius-sm: 4px;
+    --md-radius-md: 8px;
+    --md-radius-lg: 12px;
+    --md-radius-xl: 16px;
+    --md-radius-round: 50%;
 
     /*
     An accent color is also set by Ghost itself in
@@ -52,10 +87,10 @@ production stylesheet in assets/built/screen.css
     You can use this variable throughout your styles
      */
 
-    /* Fonts */
-    --font-sans: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
-    --font-serif: Georgia, Times, serif;
-    --font-mono: Menlo, Courier, monospace;
+    /* Material Design Typography - Roboto font family */
+    --font-sans: "Roboto", -apple-system, BlinkMacSystemFont, "Segoe UI", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+    --font-serif: "Merriweather", Georgia, "Times New Roman", serif;
+    --font-mono: "Roboto Mono", Menlo, Courier, monospace;
 
 }
 
@@ -68,6 +103,7 @@ production stylesheet in assets/built/screen.css
     display: flex;
     flex-direction: column;
     min-height: 100vh;
+    background: var(--color-wash);
 }
 
 .site-content {
@@ -276,6 +312,8 @@ production stylesheet in assets/built/screen.css
     line-height: 1.3em;
     background-color: #fff;
     z-index: 150;
+    box-shadow: var(--md-elevation-1);
+    transition: box-shadow 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .has-cover:not(.home-template) .gh-head {
@@ -508,10 +546,10 @@ production stylesheet in assets/built/screen.css
     visibility: hidden;
     text-align: left;
     background-color: #fff;
-    border-radius: 5px;
-    box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.04), 0 7px 20px -5px rgba(0, 0, 0, 0.15);
+    border-radius: var(--md-radius-md);
+    box-shadow: var(--md-elevation-3);
     transform: translate3d(0, 6px, 0);
-    transition: opacity 0.3s, transform 0.2s;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .is-head-middle-logo .gh-dropdown {
@@ -594,12 +632,26 @@ production stylesheet in assets/built/screen.css
     align-items: center;
     padding: 8px 20px;
     height: 44px;
-    font-weight: 600;
-    letter-spacing: -0.005em;
-    font-size: 1.6rem;
-    border-radius: 48px;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    border-radius: var(--md-radius-md);
     color: #fff;
-    background: var(--ghost-accent-color);
+    background: var(--ghost-accent-color, var(--md-primary));
+    box-shadow: var(--md-elevation-2);
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    cursor: pointer;
+}
+
+.gh-head-button:hover {
+    box-shadow: var(--md-elevation-3);
+    transform: translateY(-1px);
+}
+
+.gh-head-button:active {
+    box-shadow: var(--md-elevation-1);
+    transform: translateY(0);
 }
 
 .has-cover .gh-head-button {
@@ -880,13 +932,24 @@ production stylesheet in assets/built/screen.css
     flex-direction: column;
     background-size: cover;
     word-break: break-word;
+    background: #fff;
+    border-radius: var(--md-radius-lg);
+    box-shadow: var(--md-elevation-2);
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    overflow: hidden;
+}
+
+.post-card:hover {
+    box-shadow: var(--md-elevation-4);
+    transform: translateY(-2px);
 }
 
 .post-card-image-link {
     position: relative;
     overflow: hidden;
     display: block;
-    margin-bottom: 32px;
+    margin-bottom: 0;
+    border-radius: var(--md-radius-lg) var(--md-radius-lg) 0 0;
 }
 
 .post-card-image-link::after {
@@ -961,23 +1024,49 @@ production stylesheet in assets/built/screen.css
     margin: 0 0 10px;
     color: var(--color-secondary-text);
     font-size: 1.4rem;
-    font-weight: 600;
-    letter-spacing: -0.005em;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
     line-height: 1;
+}
+
+.post-card-primary-tag {
+    display: inline-block;
+    padding: 4px 12px;
+    color: var(--ghost-accent-color, var(--md-primary));
+    background: rgba(139, 69, 19, 0.1);
+    border-radius: var(--md-radius-sm);
+    font-size: 1.2rem;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.post-card-primary-tag:hover {
+    background: rgba(139, 69, 19, 0.15);
+    transform: translateY(-1px);
 }
 
 .post-card-featured {
     position: relative;
-    display: flex;
+    display: inline-flex;
     align-items: center;
-    gap: 3px;
-    padding-left: 18px;
-    color: var(--ghost-accent-color);
+    gap: 6px;
+    padding: 4px 12px;
+    color: var(--ghost-accent-color, var(--md-primary));
+    background: rgba(139, 69, 19, 0.1);
+    border-radius: var(--md-radius-sm);
+    font-size: 1.2rem;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
 }
 
 .post-card-featured svg {
-    position: absolute;
-    left: 0;
+    width: 14px;
+    height: 14px;
+    flex-shrink: 0;
 }
 
 .post-card-title {
@@ -1009,6 +1098,7 @@ production stylesheet in assets/built/screen.css
     flex-grow: 1;
     display: flex;
     flex-direction: column;
+    padding: var(--md-spacing-lg);
 }
 
 .post-card-excerpt {
@@ -1247,8 +1337,28 @@ html.no-infinite-scroll .pagination {
     font-size: 1.6rem;
 }
 
-.article-tag a {
-    color: var(--color-secondary-text);
+.article-tag a,
+.post-card-primary-tag a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.article-tag .post-card-primary-tag {
+    display: inline-block;
+    padding: 6px 14px;
+    color: var(--ghost-accent-color, var(--md-primary));
+    background: rgba(139, 69, 19, 0.1);
+    border-radius: var(--md-radius-sm);
+    font-size: 1.4rem;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.article-tag .post-card-primary-tag:hover {
+    background: rgba(139, 69, 19, 0.15);
+    transform: translateY(-1px);
 }
 
 .article-title {
@@ -1322,6 +1432,15 @@ use it for applying any other styles. */
         [main-start] var(--main) [main-end]
         var(--wide) [wide-end]
         var(--full) [full-end];
+}
+
+.post-template .gh-canvas {
+    background: #fff;
+    border-radius: var(--md-radius-lg);
+    box-shadow: var(--md-elevation-2);
+    padding: var(--md-spacing-xxl);
+    margin: var(--md-spacing-xl) auto;
+    max-width: calc(1200px + var(--md-spacing-xxl) * 2);
 }
 
 .gh-canvas > * {
@@ -1476,26 +1595,29 @@ is the very first element in the post content */
     padding: 0;
 }
 
+.gh-content > blockquote:not([class]) {
+    border-left: 4px solid var(--ghost-accent-color, var(--md-primary));
+    background: var(--color-lightgrey);
+    border-radius: var(--md-radius-sm);
+    padding: var(--md-spacing-md) var(--md-spacing-lg);
+    margin-left: 0;
+}
+
 .gh-content > blockquote:not([class])::before {
-    content: "";
-    position: absolute;
-    left: -1.5em;
-    top: 0;
-    bottom: 0;
-    width: 0.3rem;
-    background: var(--ghost-accent-color);
+    display: none;
 }
 
 .gh-content :not(pre) > code {
     vertical-align: middle;
     padding: 0.15em 0.4em 0.15em;
-    border: #e1eaef 1px solid;
+    border: none;
     font-weight: 400 !important;
     font-size: 0.9em;
     line-height: 1em;
-    color: #15171A;
-    background: #f0f6f9;
-    border-radius: 0.25em;
+    color: var(--color-darkgrey);
+    background: var(--color-lightgrey);
+    border-radius: var(--md-radius-sm);
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
 }
 
 .gh-content pre {
@@ -1505,8 +1627,8 @@ is the very first element in the post content */
     font-size: 1.4rem;
     line-height: 1.5em;
     background: var(--color-darkgrey);
-    border-radius: 5px;
-    box-shadow: 0 2px 6px -2px rgba(0,0,0,.1), 0 0 1px rgba(0,0,0,.4);
+    border-radius: var(--md-radius-md);
+    box-shadow: var(--md-elevation-2);
 }
 
 .gh-content ol ol li {
@@ -1827,13 +1949,15 @@ iframe.instagram-media + script + :not([id]) {
     font-size: 1.7rem;
     color: var(--color-secondary-text);
     background: #fff;
-    border: 1px solid var(--color-border);
-    border-radius: 8px;
-    transition: border-color 0.2s;
+    border: none;
+    border-radius: var(--md-radius-md);
+    box-shadow: var(--md-elevation-2);
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-cta-button:hover {
-    border-color: color-mod(var(--color-border) l(-12%));
+    box-shadow: var(--md-elevation-3);
+    transform: translateY(-1px);
 }
 
 .footer-cta-button span {
@@ -1841,10 +1965,12 @@ iframe.instagram-media + script + :not([id]) {
     padding: 9px 15px;
     color: #fff;
     font-size: 1.6rem;
-    font-weight: 600;
-    letter-spacing: -0.005em;
-    background: var(--ghost-accent-color);
-    border-radius: 6px;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    background: var(--ghost-accent-color, var(--md-primary));
+    border-radius: var(--md-radius-sm);
+    box-shadow: var(--md-elevation-1);
 }
 
 
@@ -2068,7 +2194,8 @@ iframe.instagram-media + script + :not([id]) {
     padding-top: 48px;
     padding-bottom: 140px;
     color: #fff;
-    background: color-mod(var(--color-darkgrey) l(-5%));
+    background: var(--color-darkgrey);
+    box-shadow: 0 -2px 8px rgba(0, 0, 0, 0.1);
 }
 
 .page-template .site-footer {

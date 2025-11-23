@@ -1,10 +1,17 @@
-# Casper
+# Malatelier
 
-The default theme for [Ghost](http://github.com/tryghost/ghost/). This is the latest development version of Casper! If you're just looking to download the latest release, head over to the [releases](https://github.com/TryGhost/Casper/releases) page.
+A cosy, Material Design-inspired theme for [Ghost](http://github.com/tryghost/ghost/). Malatelier combines the warmth of a cosy aesthetic with the clean principles of Google Material Design, creating a beautiful and inviting reading experience.
 
 &nbsp;
 
-![screenshot-desktop](https://user-images.githubusercontent.com/1418797/183329195-8e8f2ee5-a473-4694-a813-a2575491209e.png)
+## Features
+
+- **Material Design Principles**: Follows Google Material Design guidelines for typography, spacing, elevation, and interactions
+- **Cosy Aesthetic**: Warm color palette with terracotta and earth tones for a welcoming feel
+- **Modern Typography**: Uses Roboto and Merriweather fonts for optimal readability
+- **Smooth Animations**: Material Design transitions and hover effects throughout
+- **Elevated Components**: Cards and buttons with proper Material Design shadows and elevation
+- **Responsive Design**: Fully responsive and mobile-friendly
 
 &nbsp;
 
@@ -32,7 +39,7 @@ One neat trick is that you can also create custom one-off templates by adding th
 
 # Development
 
-Casper styles are compiled using Gulp/PostCSS to polyfill future CSS spec. You'll need [Node](https://nodejs.org/), [Yarn](https://yarnpkg.com/) and [Gulp](https://gulpjs.com) installed globally. After that, from the theme's root directory:
+Malatelier styles are compiled using Gulp/PostCSS to polyfill future CSS spec. You'll need [Node](https://nodejs.org/), [Yarn](https://yarnpkg.com/) and [Gulp](https://gulpjs.com) installed globally. After that, from the theme's root directory:
 
 ```bash
 # install dependencies
@@ -59,11 +66,24 @@ yarn zip
 
 # SVG Icons
 
-Casper uses inline SVG icons, included via Handlebars partials. You can find all icons inside `/partials/icons`. To use an icon just include the name of the relevant file, eg. To include the SVG icon in `/partials/icons/rss.hbs` - use `{{> "icons/rss"}}`.
+Malatelier uses inline SVG icons, included via Handlebars partials. You can find all icons inside `/partials/icons`. To use an icon just include the name of the relevant file, eg. To include the SVG icon in `/partials/icons/rss.hbs` - use `{{> "icons/rss"}}`.
 
 You can add your own SVG icons in the same manner.
 
+# Material Design Features
+
+Malatelier implements several Material Design principles:
+
+- **Color System**: Warm, cosy color palette with Material Design elevation shadows
+- **Typography Scale**: Roboto for UI elements, Merriweather for body text
+- **Elevation System**: 5 levels of elevation shadows for depth and hierarchy
+- **Spacing System**: Consistent spacing scale following Material Design guidelines
+- **Border Radius**: Rounded corners with Material Design radius values
+- **Transitions**: Smooth cubic-bezier transitions for all interactive elements
+
 
 # Copyright & License
+
+Malatelier is based on Casper, the default Ghost theme.
 
 Copyright (c) 2013-2025 Ghost Foundation - Released under the [MIT license](LICENSE).

@@ -274,12 +274,12 @@ body {
     color: var(--color-darkgrey);
     font-family: var(--gh-font-body, var(--font-sans));
     font-size: 1.6rem;
-    line-height: 1.6em;
+    line-height: 1.75em;
     font-weight: 400;
     font-style: normal;
-    letter-spacing: 0;
+    letter-spacing: 0.01em;
     text-rendering: optimizeLegibility;
-    background: #fff;
+    background: var(--color-wash, #F9F6F2);
 
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
@@ -288,7 +288,8 @@ body {
 
 ::selection {
     text-shadow: none;
-    background: #daf2fd;
+    background: rgba(139, 69, 19, 0.2);
+    color: var(--color-darkgrey);
 }
 
 hr {

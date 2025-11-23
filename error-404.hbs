@@ -15,6 +15,9 @@ Keep this template as lightweight as you can!
 <section class="outer error-content">
     <div class="inner">
         <section class="error-message">
+            <div class="error-logo">
+                {{> "icons/malatelier-logo"}}
+            </div>
             <h1 class="error-code">{{statusCode}}</h1>
             <p class="error-description">{{message}}</p>
             <a class="error-link" href="{{@site.url}}">Go to the front page →</a>

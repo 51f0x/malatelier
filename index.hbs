@@ -26,7 +26,9 @@ into the {body} of the default.hbs template --}}
                 {{#if @site.logo}}
                     <img class="site-logo" src="{{@site.logo}}" alt="{{@site.title}}">
                 {{else}}
-                    <h1 class="site-title">{{@site.title}}</h1>
+                    <div class="site-logo site-logo-svg">
+                        {{> "icons/malatelier-logo"}}
+                    </div>
                 {{/if}}
             {{/match}}
             {{#if @site.description}}

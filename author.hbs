@@ -30,6 +30,10 @@
 
                 {{#if profile_image}}
                     <img class="author-profile-pic" src="{{profile_image}}" alt="{{name}}" />
+                {{else}}
+                    <div class="author-profile-default-icon">
+                        {{> "icons/paintbrush"}}
+                    </div>
                 {{/if}}
 
                 <header class="post-card-header">

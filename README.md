@@ -73,10 +73,18 @@ The theme includes the official Malatelier Brig logo and branding assets:
 
 ### Logo Integration
 
-✅ **Footer**: Logo automatically displays in footer (white version)  
-✅ **Header**: Upload logo via Ghost Admin > Settings > General > Site logo  
+The Malatelier branding is integrated throughout the entire theme:
+
+✅ **Homepage Header**: Logo displays automatically when no custom logo is uploaded  
+✅ **Footer**: Logo automatically displays in footer on every page  
+✅ **Error Pages**: Logo appears in navigation on 500/400 error pages  
+✅ **404 Page**: Subtle watermark logo on Page Not Found  
+✅ **Tag Pages**: Art icon (palette) in tag headers  
+✅ **Author Pages**: Paintbrush icon for authors without profile images  
 ✅ **Favicon**: Automatically integrated in browser tabs  
 ✅ **Mobile**: iOS home screen icon ready
+
+For detailed logo integration information, see [LOGO-INTEGRATION.md](LOGO-INTEGRATION.md).
 
 📖 **See [LOGO-SETUP.md](LOGO-SETUP.md) for detailed setup instructions**
 

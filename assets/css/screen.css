@@ -202,6 +202,19 @@ button:focus-visible {
     max-height: 96px;
 }
 
+.site-logo-svg {
+    display: inline-block;
+}
+
+.site-logo-svg svg {
+    height: 120px;
+    width: auto;
+}
+
+.site-header-content.left-aligned .site-logo-svg svg {
+    height: 96px;
+}
+
 .site-title {
     z-index: 10;
     margin: 0;
@@ -2191,6 +2204,66 @@ iframe.instagram-media + script + :not([id]) {
     height: 80px;
     width: auto;
     fill: currentColor;
+}
+
+/* Error page logo */
+.site-nav-logo-svg {
+    display: inline-block;
+}
+
+.site-nav-logo-svg svg {
+    height: 50px;
+    width: auto;
+}
+
+/* Tag icon */
+.tag-icon-wrapper {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 48px;
+    height: 48px;
+    margin-bottom: 16px;
+    padding: 12px;
+    background: var(--ghost-accent-color, var(--color-primary));
+    border-radius: var(--radius-lg);
+    color: #fff;
+}
+
+.tag-icon-wrapper svg {
+    width: 24px;
+    height: 24px;
+}
+
+/* Error page branding */
+.error-logo {
+    display: inline-block;
+    margin-bottom: 32px;
+    opacity: 0.3;
+}
+
+.error-logo svg {
+    height: 80px;
+    width: auto;
+}
+
+/* Author default icon */
+.author-profile-default-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 120px;
+    height: 120px;
+    margin-bottom: 16px;
+    padding: 24px;
+    background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-secondary) 100%);
+    border-radius: 50%;
+    color: #fff;
+}
+
+.author-profile-default-icon svg {
+    width: 60px;
+    height: 60px;
 }
 
 .site-footer .copyright a {

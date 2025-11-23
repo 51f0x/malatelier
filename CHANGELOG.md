@@ -10,6 +10,9 @@
 - Created new Material Design-inspired identity
 - Integrated official Malatelier Brig logo and favicon
 - Applied brand colors from Malatelier Brig (#e84747 primary red)
+- **Logo automatically displays in footer** (white version on gradient)
+- Logo assets ready for Ghost admin upload
+- Created LOGO-SETUP.md with complete setup instructions
 
 #### Material Design Implementation
 - **Color Palette**: Vibrant, artistic colors inspired by Malatelier Brig

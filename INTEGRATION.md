@@ -9,7 +9,10 @@ This document explains how the Malatelier Brig branding has been integrated into
 2. Applied brand colors (#e84747 Malatelier Red)
 3. Updated all metadata and documentation
 4. Added favicon support to template
-5. Theme validated and ready for use
+5. **Integrated logo in footer** - automatically displays
+6. Added logo fallback for header
+7. Created comprehensive setup guide (LOGO-SETUP.md)
+8. Theme validated and ready for use
 
 ## Files Modified
 

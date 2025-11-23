@@ -67,9 +67,18 @@ Malatelier follows Google Material Design guidelines:
 # Branding
 
 The theme includes the official Malatelier Brig logo and branding assets:
-- Logo: `assets/images/branding/malatelier-logo.jpg`
-- Favicon: `assets/images/favicon.ico`
-- Apple Touch Icon: `assets/images/apple-touch-icon.png`
+- **Logo**: `assets/images/branding/malatelier-logo.jpg` (140x158px)
+- **Favicon**: `assets/images/favicon.ico` (32x32px) - automatically integrated
+- **Apple Touch Icon**: `assets/images/apple-touch-icon.png` (192x192px) - automatically integrated
+
+### Logo Integration
+
+✅ **Footer**: Logo automatically displays in footer (white version)  
+✅ **Header**: Upload logo via Ghost Admin > Settings > General > Site logo  
+✅ **Favicon**: Automatically integrated in browser tabs  
+✅ **Mobile**: iOS home screen icon ready
+
+📖 **See [LOGO-SETUP.md](LOGO-SETUP.md) for detailed setup instructions**
 
 All branding assets are sourced from [www.malatelier-brig.ch](https://www.malatelier-brig.ch/) and remain property of Malatelier Brig.
 

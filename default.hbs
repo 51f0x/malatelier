@@ -90,7 +90,14 @@
     {{!-- The global footer at the very bottom of the screen --}}
     <footer class="site-footer outer">
         <div class="inner">
-            <section class="copyright"><a href="{{@site.url}}">{{@site.title}}</a> &copy; {{date format="YYYY"}}</section>
+            <div class="site-footer-content">
+                {{#if @site.logo}}
+                    <img class="site-footer-logo" src="{{@site.logo}}" alt="{{@site.title}}">
+                {{else}}
+                    <img class="site-footer-logo" src="{{asset "images/branding/malatelier-logo.jpg"}}" alt="Malatelier Brig">
+                {{/if}}
+                <section class="copyright"><a href="{{@site.url}}">{{@site.title}}</a> &copy; {{date format="YYYY"}}</section>
+            </div>
             <nav class="site-footer-nav">
                 {{navigation type="secondary"}}
             </nav>
